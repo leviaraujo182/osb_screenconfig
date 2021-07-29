@@ -17,7 +17,9 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
     },
   },
   header: {
-    padding: padding,
+    padding: 0,
+    marginTop: 28,
+
   },
   main: {
     flex: 1,
