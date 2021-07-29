@@ -6,6 +6,7 @@ export const useStyles = makeStyles({
   title: {
     fontWeight: 700,
     fontSize: 20,
+    marginBottom: 18,
 
     "& + #pd-subtitle": {
       marginTop: 24,
