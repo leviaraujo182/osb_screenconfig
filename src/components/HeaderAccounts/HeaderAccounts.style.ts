@@ -15,7 +15,13 @@ export const useStyles = makeStyles({
         
         "& .MuiListItemText-primary": {
             fontWeight: 500
+        },
+
+        "& .MuiListItemText-secondary": {
+            fontWeight: 400
         }
+
+
     },
 
 })

@@ -1,5 +1,16 @@
 import React from 'react'
-import { Box, Typography, List, ListItem, ListItemText, ListItemAvatar, ListItemSecondaryAction, IconButton } from "@material-ui/core";
+import 
+{ 
+Box, 
+Typography, 
+List, 
+ListItem, 
+ListItemText, 
+ListItemAvatar, 
+ListItemSecondaryAction, 
+IconButton,
+
+} from "@material-ui/core";
 import { useStyles } from './HeaderAccounts.style'
 
 
@@ -26,6 +37,7 @@ export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle,
                         </IconButton>
                     </ListItemSecondaryAction>
                 </ListItem>
+                
             </List>
     )
 }

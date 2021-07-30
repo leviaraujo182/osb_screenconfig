@@ -3,7 +3,7 @@ import { PageContainer } from 'components/PageContainer'
 import { ProcessPageLayout } from 'components/ProcessPageLayout'
 import { ProcessDescriptionHeader } from 'components/ProcessDescriptionHeader'
 import { HeaderAccounts } from 'components/HeaderAccounts'
-import { Box } from '@material-ui/core'
+import { Box, Divider } from '@material-ui/core'
 import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon'
 import { styles } from './SettingPage.style'
 
@@ -23,6 +23,7 @@ export const SettingPage = () => {
                     <Box style={{ paddingBottom: 20 }}>
                         <ProcessDescriptionHeader title="Configurações" />
                         <HeaderAccounts title="Luiz Ananda Macêdo" subtitle="Conta 12345-0" icon={Iconfem} iconRight={IconCheck}/>
+                        <Divider variant="fullWidth"/>
                         <HeaderAccounts title="Pedro Victor da Silva" subtitle="Conta 12345-0" icon={Iconmasc} iconRight={IconFix}/>
                         <Box style={{ display: 'flex', justifyContent: 'center', }}>
                             <Box className={useStyles.boxbtn}>
