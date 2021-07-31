@@ -6,6 +6,7 @@ import { HeaderAccounts } from 'components/HeaderAccounts'
 import { Box, Divider } from '@material-ui/core'
 import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon'
 import { styles } from './SettingPage.style'
+import { ListOptions } from 'features/ScreenSettings/components/ListOptions'
 
 import Iconfem from '_assets/imgs/personafem.svg'
 import Iconmasc from '_assets/imgs/personamasc.svg'
@@ -22,9 +23,9 @@ export const SettingPage = () => {
                 header={
                     <Box className={useStyles.boxmain}>
                         <ProcessDescriptionHeader title="Configurações" />
-                        <HeaderAccounts title="Luiz Ananda Macêdo" subtitle="Conta 12345-0" icon={Iconfem} iconRight={IconCheck}/>
+                        <HeaderAccounts title="Luiz Ananda Macêdo" subtitle="Conta 12345-0" bank="Banquinho" icon={Iconfem} iconRight={IconCheck}/>
                         <Divider variant="fullWidth"/>
-                        <HeaderAccounts title="Pedro Victor da Silva" subtitle="Conta 12345-0" icon={Iconmasc} iconRight={IconFix}/>
+                        <HeaderAccounts title="Pedro Victor da Silva" subtitle="Conta 12345-0" bank="Bancão" icon={Iconmasc} iconRight={IconFix}/>
                         <Box style={{ display: 'flex', justifyContent: 'center', }}>
                             <Box className={useStyles.boxbtn}>
                                 <ButtonWithFloatingIcon size="medium">Ver todas</ButtonWithFloatingIcon>
@@ -34,7 +35,7 @@ export const SettingPage = () => {
                 }
                 main={
                     <Box>
-                        BOXMAIN
+                        <ListOptions />
                     </Box>
                 }
                 footer={"footer"}

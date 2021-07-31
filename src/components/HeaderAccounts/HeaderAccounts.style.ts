@@ -14,11 +14,13 @@ export const useStyles = makeStyles({
         alignItems: 'center',
         
         "& .MuiListItemText-primary": {
-            fontWeight: 500
+            fontWeight: 500,
+            fontSize: 13
         },
 
         "& .MuiListItemText-secondary": {
-            fontWeight: 400
+            fontWeight: 400,
+            fontSize: 12
         }
 
 

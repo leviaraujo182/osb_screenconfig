@@ -19,10 +19,11 @@ interface HeaderAccountsProps {
     title: string,
     subtitle: string,
     icon: string,
-    iconRight: string
+    iconRight: string,
+    bank: string
 }
 
-export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle, icon, iconRight}) => {
+export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle, icon, iconRight, bank}) => {
     const style = useStyles()
     return (
             <List className={style.list}>
@@ -30,7 +31,12 @@ export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle,
                     <ListItemAvatar>
                         <img src={icon} className={style.iconmargin}/>
                     </ListItemAvatar>
-                    <ListItemText primary={title} secondary={subtitle} />
+                    <ListItemText primary={title} secondary={
+                        <div>
+                            <div>{subtitle}</div>
+                            <div>{bank}</div>
+                        </div>
+                    } />
                     <ListItemSecondaryAction>
                         <IconButton edge="end" className={style.iconbutton}>
                             <img src={iconRight} />
