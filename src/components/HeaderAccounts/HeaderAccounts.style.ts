@@ -24,4 +24,8 @@ export const useStyles = makeStyles({
 
     },
 
+    iconbutton: {
+        padding: 0
+    }
+
 })

@@ -5,6 +5,10 @@ export const styles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         position: 'absolute',
-        marginTop: 6
+
+    },
+
+    boxmain:{
+        paddingBottom: 0
     }
 }) 

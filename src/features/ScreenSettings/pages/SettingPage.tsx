@@ -20,7 +20,7 @@ export const SettingPage = () => {
         <PageContainer>
             <ProcessPageLayout 
                 header={
-                    <Box style={{ paddingBottom: 20 }}>
+                    <Box className={useStyles.boxmain}>
                         <ProcessDescriptionHeader title="Configurações" />
                         <HeaderAccounts title="Luiz Ananda Macêdo" subtitle="Conta 12345-0" icon={Iconfem} iconRight={IconCheck}/>
                         <Divider variant="fullWidth"/>
@@ -32,7 +32,11 @@ export const SettingPage = () => {
                         </Box>
                     </Box>
                 }
-                main={"main"}
+                main={
+                    <Box>
+                        BOXMAIN
+                    </Box>
+                }
                 footer={"footer"}
             />
         </PageContainer>

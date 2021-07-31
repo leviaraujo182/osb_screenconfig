@@ -17,14 +17,15 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
     },
   },
   header: {
-    padding: 0,
-    marginTop: 28,
+    padding: padding,
 
   },
   main: {
     flex: 1,
+    width: '100%',
     backgroundColor: "#FFFFFF",
     padding: padding,
+    
   },
   footer: {
     width: "100%",
