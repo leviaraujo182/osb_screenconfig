@@ -31,7 +31,7 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
     width: "100%",
     padding: padding,
     position: ({ footerPosition }) => footerPosition ?? "relative",
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.paper,
     bottom: 0,
     left: 0,
     right: 0,
