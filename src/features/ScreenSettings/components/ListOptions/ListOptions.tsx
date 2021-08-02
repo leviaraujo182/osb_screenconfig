@@ -27,7 +27,7 @@ export const ListOptions : React.FC = () => {
                </ListItemText>
            </ListItem>
 
-           <ListItem button divider className={styles.listitemtext}>
+           <ListItem button className={styles.listitemtext}>
                <ListItemText>
                    Sair da conta
                </ListItemText>

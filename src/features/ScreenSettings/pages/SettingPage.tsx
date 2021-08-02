@@ -7,6 +7,7 @@ import { Box, Divider } from '@material-ui/core'
 import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon'
 import { styles } from './SettingPage.style'
 import { ListOptions } from 'features/ScreenSettings/components/ListOptions'
+import { Button } from 'components/Button'
 
 import Iconfem from '_assets/imgs/personafem.svg'
 import Iconmasc from '_assets/imgs/personamasc.svg'
@@ -38,7 +39,7 @@ export const SettingPage = () => {
                         <ListOptions />
                     </Box>
                 }
-                footer={"footer"}
+                footer={ <Button palette="secondary" onClick={()=> console.log("Voltar")}> Voltar </Button> }
             />
         </PageContainer>
     )
