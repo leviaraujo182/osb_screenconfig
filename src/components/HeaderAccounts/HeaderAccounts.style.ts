@@ -26,7 +26,8 @@ export const useStyles = makeStyles({
     },
 
     iconbutton: {
-        padding: 0
+        padding: 0,
+        paddingRight: 5
     },
 
     itemavatar: {
@@ -34,7 +35,7 @@ export const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 5
+        marginTop: 5,
     }
 
 })
