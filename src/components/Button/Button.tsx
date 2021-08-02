@@ -24,7 +24,6 @@ export const Button: React.FC<ButtonProps> = ({
   style,
 }) => {
   const styles = useStyles({ size, palette, variant, radius });
-
   return (
     <MuiButton
       variant={variant}

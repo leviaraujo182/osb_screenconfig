@@ -21,13 +21,20 @@ export const useStyles = makeStyles({
         "& .MuiListItemText-secondary": {
             fontWeight: 400,
             fontSize: 12
-        }
-
+        },
 
     },
 
     iconbutton: {
         padding: 0
+    },
+
+    itemavatar: {
+        marginRight: 5,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 5
     }
 
 })

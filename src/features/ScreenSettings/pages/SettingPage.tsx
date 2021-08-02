@@ -8,6 +8,7 @@ import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon'
 import { styles } from './SettingPage.style'
 import { ListOptions } from 'features/ScreenSettings/components/ListOptions'
 import { Button } from 'components/Button'
+import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons'
 
 import Iconfem from '_assets/imgs/personafem.svg'
 import Iconmasc from '_assets/imgs/personamasc.svg'
@@ -35,11 +36,14 @@ export const SettingPage = () => {
                     </Box>
                 }
                 main={
-                    <Box>
+                    <Box style={{ marginTop: 20 }} >  
                         <ListOptions />
                     </Box>
                 }
-                footer={ <Button palette="secondary" onClick={()=> console.log("Voltar")}> Voltar </Button> }
+                footer={
+                <Box > 
+                    <Button palette="secondary" onClick={()=> console.log("Voltar")} startIcon={ <KeyboardArrowLeft color="primary" radius={20}/>} > Voltar </Button>
+                </Box> }
             />
         </PageContainer>
     )
