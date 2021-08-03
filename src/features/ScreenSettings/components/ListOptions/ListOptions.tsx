@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, List, ListItem, ListItemText, Divider } from '@material-ui/core'
+import { List, ListItem, ListItemText } from '@material-ui/core'
 import { useStyles } from './ListOptions.style'
 
 export const ListOptions : React.FC = () => {

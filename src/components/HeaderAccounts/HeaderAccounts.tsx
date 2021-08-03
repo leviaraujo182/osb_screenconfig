@@ -1,8 +1,6 @@
 import React from 'react'
 import 
 { 
-Box, 
-Typography, 
 List, 
 ListItem, 
 ListItemText, 
@@ -29,7 +27,7 @@ export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle,
             <List className={style.list}>
                 <ListItem button className={style.listitem}>
                     <ListItemAvatar className={style.itemavatar}>
-                        <img src={icon} className={style.iconmargin}/>
+                        <img src={icon} className={style.iconmargin} alt="imgleft"/>
                     </ListItemAvatar>
                     <ListItemText primary={title} secondary={
                         <div>
@@ -39,7 +37,7 @@ export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle,
                     } />
                     <ListItemSecondaryAction>
                         <IconButton edge="end" className={style.iconbutton}>
-                            <img src={iconRight} />
+                            <img src={iconRight} alt="imgright"/>
                         </IconButton>
                     </ListItemSecondaryAction>
                 </ListItem>

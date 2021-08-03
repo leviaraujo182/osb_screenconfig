@@ -8,7 +8,7 @@ import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon'
 import { styles } from './SettingPage.style'
 import { ListOptions } from 'features/ScreenSettings/components/ListOptions'
 import { Button } from 'components/Button'
-import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons'
+import { KeyboardArrowLeft } from '@material-ui/icons'
 
 import Iconfem from '_assets/imgs/personafem.svg'
 import Iconmasc from '_assets/imgs/personamasc.svg'
