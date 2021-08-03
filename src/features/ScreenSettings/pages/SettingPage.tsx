@@ -28,7 +28,7 @@ export const SettingPage = () => {
                         <HeaderAccounts title="Luiz Ananda Macêdo" subtitle="Conta 12345-0" bank="Banquinho" icon={Iconfem} iconRight={IconCheck}/>
                         <Divider variant="fullWidth"/>
                         <HeaderAccounts title="Pedro Victor da Silva" subtitle="Conta 12345-0" bank="Bancão" icon={Iconmasc} iconRight={IconFix}/>
-                        <Box style={{ display: 'flex', justifyContent: 'center', }}>
+                        <Box className={useStyles.containerbtn}>
                             <Box className={useStyles.boxbtn}>
                                 <ButtonWithFloatingIcon size="medium">Ver todas</ButtonWithFloatingIcon>
                             </Box>
@@ -36,7 +36,7 @@ export const SettingPage = () => {
                     </Box>
                 }
                 main={
-                    <Box style={{ marginTop: 20 }} >  
+                    <Box className={useStyles.boxoptions} >  
                         <ListOptions />
                     </Box>
                 }

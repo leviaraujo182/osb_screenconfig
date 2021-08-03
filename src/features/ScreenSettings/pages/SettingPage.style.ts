@@ -9,7 +9,16 @@ export const styles = makeStyles({
 
     },
 
+    containerbtn: {
+        display: 'flex',
+        justifyContent: 'center'
+    },
+
     boxmain:{
         
+    },
+
+    boxoptions: {
+        marginTop: 20
     }
 }) 
