@@ -2,7 +2,11 @@ import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles({
     list: {
-        padding: 0
+        padding: 0,
+
+        "& .MuiListItem-gutters": {
+            paddingLeft: 8
+        }
     },
 
     iconmargin: {
@@ -15,13 +19,15 @@ export const useStyles = makeStyles({
         
         "& .MuiListItemText-primary": {
             fontWeight: 500,
-            fontSize: 13
+            fontSize: 13,
         },
 
         "& .MuiListItemText-secondary": {
             fontWeight: 401,
-            fontSize: 12
+            fontSize: 12,
+
         },
+
 
     },
 
