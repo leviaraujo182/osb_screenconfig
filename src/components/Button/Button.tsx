@@ -7,8 +7,6 @@ interface ButtonProps extends ButtonStylesProps {
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
-  radius?: number
-  style?: object
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -20,10 +18,9 @@ export const Button: React.FC<ButtonProps> = ({
   variant = "contained",
   palette = "primary",
   children,
-  radius,
-  style,
 }) => {
-  const styles = useStyles({ size, palette, variant, radius });
+  const styles = useStyles({ size, palette, variant });
+
   return (
     <MuiButton
       variant={variant}
@@ -34,7 +31,6 @@ export const Button: React.FC<ButtonProps> = ({
       endIcon={endIcon}
       className={styles.button}
       onClick={onClick}
-      style={style}
     >
       {children}
     </MuiButton>

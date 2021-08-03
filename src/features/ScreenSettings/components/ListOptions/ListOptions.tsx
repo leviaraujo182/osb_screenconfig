@@ -5,7 +5,7 @@ import { useStyles } from './ListOptions.style'
 export const ListOptions : React.FC = () => {
     const styles = useStyles()
     return (
-       <List>
+       <List className={styles.listmain}>
            <ListItem button divider>
                <ListItemText className={styles.listitemtext}>
                    Informações Pessoais

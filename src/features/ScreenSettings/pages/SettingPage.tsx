@@ -7,8 +7,7 @@ import { Box, Divider } from '@material-ui/core'
 import { ButtonWithFloatingIcon } from 'components/ButtonWithFloatingIcon'
 import { styles } from './SettingPage.style'
 import { ListOptions } from 'features/ScreenSettings/components/ListOptions'
-import { Button } from 'components/Button'
-import { KeyboardArrowLeft } from '@material-ui/icons'
+import { FooterButtons } from 'components/FooterButtons'
 
 import Iconfem from '_assets/imgs/personafem.svg'
 import Iconmasc from '_assets/imgs/personamasc.svg'
@@ -41,8 +40,8 @@ export const SettingPage = () => {
                     </Box>
                 }
                 footer={
-                <Box > 
-                    <Button palette="secondary" onClick={()=> console.log("Voltar")} startIcon={ <KeyboardArrowLeft color="primary" radius={20}/>} > Voltar </Button>
+                <Box >
+                    <FooterButtons />    
                 </Box> }
             />
         </PageContainer>

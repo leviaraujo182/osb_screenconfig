@@ -19,7 +19,7 @@ export const useStyles = makeStyles({
         },
 
         "& .MuiListItemText-secondary": {
-            fontWeight: 400,
+            fontWeight: 401,
             fontSize: 12
         },
 

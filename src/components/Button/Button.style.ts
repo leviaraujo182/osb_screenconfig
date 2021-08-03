@@ -5,14 +5,13 @@ export interface ButtonStylesProps {
   variant?: "outlined" | "contained";
   size?: "small" | "medium" | "large";
   palette?: "primary" | "secondary";
-  radius?: number;
 }
 
 export const useStyles = makeStyles<Theme, ButtonStylesProps, "button">({
   button: {
     height: 36,
-    width: 136,
     fontSize: 12,
+    width: 136,
     backgroundColor: ({ palette, variant }) => {
       if (variant === "outlined") return "transparent";
 
@@ -23,7 +22,7 @@ export const useStyles = makeStyles<Theme, ButtonStylesProps, "button">({
 
       return palette === "primary" ? "white" : textColors.primary;
     },
-    borderRadius: 10,
+    borderRadius: 4,
 
     "&.MuiButton-contained": {
       border: "0.5px solid transparent",
@@ -34,6 +33,11 @@ export const useStyles = makeStyles<Theme, ButtonStylesProps, "button">({
         `0.5px solid ${
           palette === "primary" ? colors.primary.main : colors.secondary
         }`,
+    },
+
+    "& .MuiButton-label": {
+      textTransform: "none",
+      textAlign: "center",
     },
 
     "&.MuiButton-sizeSmall": {
@@ -51,37 +55,5 @@ export const useStyles = makeStyles<Theme, ButtonStylesProps, "button">({
       fontSize: 12,
       height: 40,
     },
-
-    "& .MuiButton-root": {
-      minWidth: 136,
-      borderRadius: 10,
-    },
-
-    "& .MuiButton-label": {
-      display: "block",
-      position: "relative",
-      textTransform: "none",
-      textAlign: "center",
-    },
-
-    "& .MuiButton-startIcon, & .MuiButton-endIcon": {
-      display: "block",
-      position: "absolute",
-    },
-    "& .MuiButton-startIcon": {
-      top: 0,
-      left: 0,
-      marginRight: 8,
-    },
-    "& .MuiButton-endIcon": {
-      marginLeft: 8,
-      top: 0,
-      right: 0,
-    },
-
-    
   },
-
-
-
 });
