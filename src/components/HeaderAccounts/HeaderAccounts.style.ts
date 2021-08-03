@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core'
+import { textColors } from '_config/themes'
 
 export const useStyles = makeStyles({
     list: {
@@ -20,12 +21,13 @@ export const useStyles = makeStyles({
         "& .MuiListItemText-primary": {
             fontWeight: 500,
             fontSize: 13,
+            color: textColors.gray
         },
 
         "& .MuiListItemText-secondary": {
             fontWeight: 401,
             fontSize: 12,
-
+            
         },
 
 
