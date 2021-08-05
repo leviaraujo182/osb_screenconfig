@@ -37,7 +37,7 @@ export const HeaderAccounts : React.FC<HeaderAccountsProps> = ({title, subtitle,
                     } />
                     <ListItemSecondaryAction>
                         <IconButton edge="end" className={style.iconbutton}>
-                            <img src={iconRight} alt="imgright"/>
+                            <img src={iconRight} alt="imgright" className={style.imgright}/>
                         </IconButton>
                     </ListItemSecondaryAction>
                 </ListItem>

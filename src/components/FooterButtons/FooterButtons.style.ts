@@ -18,11 +18,17 @@ export const useStyles = makeStyles({
     "& .MuiButton-startIcon, & .MuiButton-endIcon": {
       display: "block",
       position: "absolute",
+      width: 14,
+      height: 8,
+
     },
     "& .MuiButton-startIcon": {
       top: 0,
       left: 0,
       marginRight: 8,
+      width: 14,
+      height: 8,
+
     },
     "& .MuiButton-endIcon": {
       marginLeft: 8,
@@ -30,4 +36,8 @@ export const useStyles = makeStyles({
       right: 0,
     },
   },
+
+  arrowleft: {
+    marginTop: 2
+  }
 });

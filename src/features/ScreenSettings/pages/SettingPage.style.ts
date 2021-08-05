@@ -5,7 +5,7 @@ export const styles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         position: 'absolute',
-        marginTop: 13
+        marginTop: 2,
 
     },
 
@@ -20,5 +20,9 @@ export const styles = makeStyles({
 
     boxoptions: {
         marginTop: 20
+    },
+
+    divider: {
+        height: 1
     }
 }) 

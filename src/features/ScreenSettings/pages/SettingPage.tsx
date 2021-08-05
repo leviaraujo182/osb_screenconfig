@@ -24,9 +24,9 @@ export const SettingPage = () => {
                 header={
                     <Box className={useStyles.boxmain}>
                         <ProcessDescriptionHeader title="Configurações" />
-                        <HeaderAccounts title="Luiz Ananda Macêdo" subtitle="Conta 12345-0" bank="Banquinho" icon={Iconfem} iconRight={IconCheck}/>
-                        <Divider variant="fullWidth"/>
-                        <HeaderAccounts title="Pedro Victor da Silva" subtitle="Conta 12345-0" bank="Bancão" icon={Iconmasc} iconRight={IconFix}/>
+                        <HeaderAccounts title="Luiza Ananda Macêdo" subtitle="Conta 12345-0" bank="Banquinho" icon={Iconfem} iconRight={IconCheck}/>
+                        <Divider variant="fullWidth" className={useStyles.divider}/>
+                        <HeaderAccounts title="Pedro Victor da Silva" subtitle="Conta 12344-0" bank="Bancão" icon={Iconmasc} iconRight={IconFix}/>
                         <Box className={useStyles.containerbtn}>
                             <Box className={useStyles.boxbtn}>
                                 <ButtonWithFloatingIcon size="medium">Ver todas</ButtonWithFloatingIcon>

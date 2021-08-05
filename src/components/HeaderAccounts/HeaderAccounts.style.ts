@@ -25,12 +25,17 @@ export const useStyles = makeStyles({
         },
 
         "& .MuiListItemText-secondary": {
-            fontWeight: 401,
+            fontWeight: 400,
             fontSize: 12,
+            color: textColors.gray
             
         },
 
+    },
 
+    imgright: {
+        width: 25,
+        height: 25
     },
 
     iconbutton: {

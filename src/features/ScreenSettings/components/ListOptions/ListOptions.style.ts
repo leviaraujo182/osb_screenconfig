@@ -7,7 +7,8 @@ export const useStyles = makeStyles({
         "& .MuiListItemText-primary": {
             fontSize: 12,
             fontWeight: 401,
-            paddingBottom: 2
+            paddingBottom: 2,
+            color: '#000000'
         },
     },
 
