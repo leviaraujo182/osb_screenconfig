@@ -5,7 +5,7 @@ export const styles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         position: 'absolute',
-        marginTop: 8,
+        marginTop: 4,
 
     },
 

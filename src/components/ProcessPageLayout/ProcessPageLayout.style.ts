@@ -18,7 +18,7 @@ export const useStyles = makeStyles<typeof theme, StylesProps>({
   },
   header: {
     padding: padding,
-    paddingTop: 21,
+    paddingTop: 24,
     minHeight: 240,
 
   },
